@@ -11,7 +11,7 @@
     {% else %}
     <div class="form-group">
     <select class="form-control" name="type">
-        <option value="">{% trans "Everything" %}</option>
+        <option value="">{% trans "全部" %}</option>
         {% for verbose_name, model in search_model_choices %}
         <option value="{{ model }}"
             {% if model == request.REQUEST.type  %}selected{% endif %}>
